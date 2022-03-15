@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Services</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a id="home" href="./eventsite.html">
+          <img src="/images/Eventsite.png" alt="" height="20" />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <button class="navbutton" id="FAQS">FAQS</button>
+        </li>
+        <li>
+          <button class="navbutton">Sign in</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <main>
+        <section class="form">
+          <h2>Create an Event</h2>
+          <form action="post">
+            <!-- name -->
+            <label for="Name">Name</label>
+            <input class="business" type="text" id="Name" />
+            <!-- email -->
+            <label for="email">Email</label>
+            <input class="business" type="text" id="email" />
+            <label for="select"> How did you find us?</label> <br />
+            <select class="business" name="select" id="select">
+              <option value="Instagram">Instagram</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Other">Other</option>
+            </select>
+            <!-- info -->
+            <label for="info">Tell us more</label>
+            <textarea name="" id="info" placeholder="Type here..."></textarea>
+            <input class="business" type="submit" value="Submit" />
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer id="footer">
+      <div class="column_container">
+        <div class="column1">
+          <h3 class="column_title">Find Events</h3>
+          <ul>
+            <li><a href="">London Events</a></li>
+            <li><a href="">Manchester Events</a></li>
+            <li><a href="">Birmingham Events</a></li>
+            <li><a href="">Liverpool Events</a></li>
+            <li><a href="">Brighton Events</a></li>
+            <li><a href="">Bristol Events</a></li>
+            <li><a href="">Newcastle Events</a></li>
+            <li><a href="">All Events</a></li>
+          </ul>
+        </div>
+        <div class="column2">
+          <h3 class="column_title">Eventsite</h3>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href=""> Press</a></li>
+            <li><a href=""> Blog </a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="column3">
+          <h3 class="column_title">Connect with us</h3>
+          <ul>
+            <li><a href="">Contact Support</a></li>
+            <li>
+              <a href="">Twitter</a>
+            </li>
+            <li>
+              <a href="">Instagram</a>
+            </li>
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column4">
+          <h3 class="column_title">Businesses</h3>
+          <div class="footer_button">
+            <a href=""
+              >Create an Event
+              <span class="fa-solid fa-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/40b776c43f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Eventsite</title>
+  </head>
+  <body>
+    <div class="">
+      <!-------------------------------------------------------------nav -->
+      <nav>
+        <div class="logo">
+          <a id="home" href="./eventsite.html">
+            <img src="/images/Eventsite.png" alt="" height="20" />
+          </a>
+        </div>
+        <ul>
+          <li>
+            <button class="navbutton" id="FAQS">FAQS</button>
+          </li>
+          <li>
+            <button class="navbutton">Sign in</button>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <!-- -------------------------------------------------------------------header -->
+        <header id="title">
+          <div class="headercontent">
+            <h1 class="header_title">Find your next event</h1>
+
+            <span class="headerform">
+              <div>
+                <!-- date -->
+
+                <label for="date"></label>
+                <input id="date" type="date" />
+              </div>
+              <!-- time -->
+              <div class="header_time">
+                <label for="time"></label>
+                <input id="time" type="time" />
+              </div>
+              <div class="header_people">
+                <span class="fa-regular fa-user"></span>
+                <label for="select "></label>
+                <select name="select" id="select">
+                  <option value="1">1 person</option>
+                  <option value="2" selected>2 people</option>
+                  <option value="3">3 people</option>
+                  <option value="4">4 people</option>
+                  <option value="5">5 people</option>
+                  <option value="6">6 people</option>
+                  <option value="7">7 people</option>
+                  <option value="8">8 people</option>
+                  <option value="9">9 people</option>
+                  <option value="10">10 people</option>
+                  <option value="11">Larger party</option>
+                </select>
+              </div>
+              <!-- ----------------------------------search -->
+              <div class="search">
+                <span class="fa-solid fa-magnifying-glass"></span>
+                <label for="search"></label>
+                <input
+                  class="search"
+                  type="text"
+                  id="search"
+                  placeholder="Location,event or venue"
+                />
+              </div>
+              <div class="button">
+                <button class="header_button">Let's go</button>
+              </div>
+            </span>
+          </div>
+        </header>
+        <!-------------------------------------------------------------------- main content -->
+        <section>
+          <div class="main_content">
+            <div class="section_header">
+              <div class="section_header_location">
+                <span class="locator_text"
+                  >It looks like you're not in North West London. Not correct
+                  ?</span
+                >
+                <button class="locator">
+                  <div class="fa-solid fa-location-arrow"></div>
+                  <div class="arrow_text">Get current location</div>
+                </button>
+              </div>
+            </div>
+            <!-- --------------------------------------------------------map -->
+            <section id="map">
+              <div class="map_title">
+                <h2><span class="Look">Look</span> Around</h2>
+              </div>
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19855.070571291006!2d-0.1627162203177268!3d51.53369069275497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1646856739628!5m2!1sen!2suk"
+                  width="980"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+
+                <a href="/event.html" id="map_button">
+                  <i class="fa-solid fa-map-pin"></i>
+                </a>
+              </div>
+              <div class="map_see">
+                <p>See what's happening near you right now !</p>
+              </div>
+            </section>
+            <!-- ----------------------------------------------------------------------events -->
+            <!------------------------------------------- near you  section-->
+            <section id="near_you">
+              <div class="section_header">
+                <span> Near you</span>
+              </div>
+              <div class="events_card_container1">
+                <article class="event_card">
+                  <div id="card_image">
+                    <img
+                      src="/images/anthony-delanoix-hzgs56Ze49s-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">
+                      Propane Events 2022 Opening Party
+                    </div>
+                    <div class="card_text">Tommorrow at 20:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Kentish Town, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £11.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="event_card">
+                  <div id="card_image">
+                    <img
+                      src="/images/erik-witsoe-GF8VvBgcJ4o-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">Batman Premiere</div>
+                    <div class="card_text">Tommorrow at 20:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Camden Town, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £7.90</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="event_card">
+                  <div id="card_image">
+                    <img
+                      src="/images/sean-foster-AxXx_UHRvIk-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">Primose Hill Mini Golf</div>
+                    <div class="card_text">Tommorrow at 20:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Kentish Town, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £11.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="event_card">
+                  <div id="card_image">
+                    <img
+                      src="/images/carl-raw-8Gdayy2Lhi0-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">Westminster Bridge Arcade</div>
+                    <div class="card_text">Tommorrow at 20:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Westminster, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £22.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <!------------------------------------------------------------- trending section -->
+              <div class="section_header">
+                <span> Trending</span>
+              </div>
+              <div class="events_card_container2">
+                <article class="event_card">
+                  <div id="card_image">
+                    <img src="/images/alchemist bar.jpg" alt="" />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">The Alchemist</div>
+                    <div class="card_text">Tommorrow at 20:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Oxford Circus, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £17.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="event_card">
+                  <div id="card_image">
+                    <img src="/images/museum.jpg" alt="" />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">Tate Modern</div>
+                    <div class="card_text">Tommorrow at 10:00am</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Kentish Town, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £11.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="event_card">
+                  <div id="card_image">
+                    <img src="/images/14 Hills bar.jpg" alt="" />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">14 Hills Restaurant</div>
+                    <div class="card_text">Tommorrow at 17:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Fenchurch Street, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £16.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="event_card">
+                  <div id="card_image">
+                    <img src="/images/london eye.jpg" alt="" />
+                  </div>
+                  <div class="event_card_content">
+                    <div class="card_title">London Eye</div>
+                    <div class="card_text">Today at 12:00pm</div>
+                    <div class="SummaryItemWrapper">
+                      <div class="Location">
+                        <p>Kentish Town, London</p>
+
+                        <div class="SummaryItemPrice">
+                          <p>Starts at £11.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+              <!-- -------------------------------------------------family friendly section -->
+              <div class="events_card_container3">
+                <div class="section_header">
+                  <span> Family friendly</span>
+                </div>
+                <div class="events_card_container2">
+                  <article class="event_card">
+                    <div id="card_image">
+                      <img src="/images/London zoo.jpg" alt="" />
+                    </div>
+                    <div class="event_card_content">
+                      <div class="card_title">London zoo</div>
+                      <div class="card_text">Tommorrow at 20:00pm</div>
+                      <div class="SummaryItemWrapper">
+                        <div class="Location">
+                          <p>Kentish Town, London</p>
+
+                          <div class="SummaryItemPrice">
+                            <p>Starts at £11.50</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="event_card">
+                    <div id="card_image">
+                      <img src="/images/greenparkfunfair.jpg" alt="" />
+                    </div>
+                    <div class="event_card_content">
+                      <div class="card_title">Green Park Funfair</div>
+                      <div class="card_text">Tommorrow at 11:00am</div>
+                      <div class="SummaryItemWrapper">
+                        <div class="Location">
+                          <p>Green Park, London</p>
+
+                          <div class="SummaryItemPrice">
+                            <p>Starts at £7.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="event_card">
+                    <div id="card_image">
+                      <img src="/images/sealife.jpg" alt="" />
+                    </div>
+                    <div class="event_card_content">
+                      <div class="card_title">Sealife London Aquarium</div>
+                      <div class="card_text">Tommorrow at 11:00am</div>
+                      <div class="SummaryItemWrapper">
+                        <div class="Location">
+                          <p>Kentish Town, London</p>
+
+                          <div class="SummaryItemPrice">
+                            <p>Starts at £12.70</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="event_card">
+                    <div id="card_image">
+                      <img src="/images/musical.jpg" alt="" />
+                    </div>
+                    <div class="event_card_content">
+                      <div class="card_title">Lion King:The Musical</div>
+                      <div class="card_text">Tommorrow at 20:00pm</div>
+                      <div class="SummaryItemWrapper">
+                        <div class="Location">
+                          <p>Victoria, London</p>
+
+                          <div class="SummaryItemPrice">
+                            <p>Starts at £15.00</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <div class="back_top">
+          <a href="#title">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+          </a>
+        </div>
+      </main>
+      <!-- ----------------------------------------------------------------------footer -->
+      <footer id="footer">
+        <div class="column_container">
+          <div class="column1">
+            <h3 class="column_title">Find Events</h3>
+            <ul>
+              <li><a href="">London Events</a></li>
+              <li><a href="">Manchester Events</a></li>
+              <li><a href="">Birmingham Events</a></li>
+              <li><a href="">Liverpool Events</a></li>
+              <li><a href="">Brighton Events</a></li>
+              <li><a href="">Bristol Events</a></li>
+              <li><a href="">Newcastle Events</a></li>
+              <li><a href="">All Events</a></li>
+            </ul>
+          </div>
+          <div class="column2">
+            <h3 class="column_title">Eventsite</h3>
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href=""> Press</a></li>
+              <li><a href=""> Blog </a></li>
+              <li><a href="">Careers</a></li>
+            </ul>
+          </div>
+          <div class="column3">
+            <h3 class="column_title">Connect with us</h3>
+            <ul>
+              <li><a href="">Contact Support</a></li>
+              <li>
+                <a href="">Twitter</a>
+              </li>
+              <li>
+                <a href="">Instagram</a>
+              </li>
+              <li>
+                <a href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column4">
+            <h3 class="column_title">Businesses</h3>
+            <div class="footer_button">
+              <a href="/services.html"
+                >Create an Event
+                <span class="fa-solid fa-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

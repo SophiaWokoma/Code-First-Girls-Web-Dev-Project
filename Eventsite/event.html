@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/40b776c43f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/main.js" defer></script>
+    <title>Event1</title>
+  </head>
+  <body>
+    <nav>
+      <!--------------- nav -->
+      <div class="logo">
+        <a id="home" href="./eventsite.html">
+          <img src="/images/Eventsite.png" alt="" height="20" />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <button class="navbutton" id="FAQS">FAQS</button>
+        </li>
+        <li>
+          <button class="navbutton">Sign in</button>
+        </li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <!---------------------- event heading -->
+      <section class="event_heading">
+        <div>
+          <h1>Tate Modern- Life between Islands Exhibition</h1>
+        </div>
+        <div class="below_heading">
+          <div class="tags">
+            <div class="tags-section">
+              <div class="ratings">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div>7,852</div>
+              </div>
+            </div>
+            <div class="tags-section">
+              #7 of the 1,902 things to do in London
+            </div>
+
+            <div class="tags-section">Points of Interest & Landmarks</div>
+            <div class="tags-section">Museum</div>
+
+            <div class="tags-section">
+              <span class="fa-solid fa-wheelchair"></span>
+              Accessibility
+            </div>
+          </div>
+
+          <div class="opening-hours">
+            <span class="opS">Open now</span>
+            <span class="opS-time"> 11.00 AM-7.00 PM</span>
+            <span class="opS">
+              Visit website
+              <i class="fa-solid fa-up-right-from-square"></i>
+            </span>
+            <span class="opS"> Email</span>
+          </div>
+        </div>
+      </section>
+      <!--------------------------------------- eventsection -->
+      <section class="eventsection" aria-label="Event photos">
+        <aside>
+          <div class="article-container">
+            <div class="article-heading">About</div>
+            <div class="article-content">
+              <p>
+                This exhibition explores the work of artists from the Caribbean
+                who made their home in Britain, alongside other British artists
+                whose work has been influenced and inspired by Caribbean themes
+                and heritage.
+              </p>
+            </div>
+            <div class="SuggestedTimeContainer">
+              <div class="SummaryItemDuration">
+                <p>Suggested duration</p>
+
+                <div class="SummaryItemHours">
+                  <p>1-2 hours</p>
+                </div>
+              </div>
+            </div>
+            <div class="article-button">
+              <button class="article">See more</button>
+            </div>
+          </div>
+        </aside>
+        <!-- carousel -->
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#60;
+          </button>
+          <button class="carousel-button next" data-carousel-button="next">
+            &#62;
+          </button>
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img
+                src="/carousel images/carouselimage1.jpg"
+                alt=" Museum image #1"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="carousel images/carouselimage2.jpg"
+                alt="Museum Image #2"
+              />
+            </li>
+            <li class="slide">
+              <img
+                src="carousel images/carouselimage3.jpg"
+                alt="Museum Image #3"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="booking-container">
+        <div class="booking-subcontainer">
+          <span> Make a booking </span>
+          <div class="booking-people">
+            <label for="select"> No. of people </label>
+            <select name="select" id="select">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <!-- date -->
+          <div class="booking-date">
+            <label for="date"> Date</label>
+            <input id="date" type="date" />
+          </div>
+          <!------------------ time -->
+          <div class="booking-time">
+            <label for="time"></label>
+            <input id="time" type="time" />
+          </div>
+          <button class="book-now">Book Now</button>
+        </div>
+      </div>
+      <section class="Advert">
+        <div class="advert-image">
+          <img src="/images/Screen Shot 2022-03-15 at 02.32.25.png" alt="" />
+        </div>
+      </section>
+      <!------------------------------------------------- visiting-guidelines-section -->
+      <section class="main">
+        <section class="visiting-guidelines">
+          <div class="subheading">Visitor guidelines</div>
+          <div class="subsection_content">
+            <p>
+              Visitor numbers are being carefully managed. There are increased
+              cleaning regimes in high use areas, protective screens on desks
+              and counters and hand sanitiser dispensers throughout the gallery.
+              <br />
+              ​When you visit:​
+              <br />
+              Keep your distance from others​ Please wear a face covering unless
+              you are exempt ​Most importantly, if you or anyone you live with
+              has COVID-19 symptoms please stay at home
+            </p>
+          </div>
+        </section>
+        <!--  --------------------------------section-The area -->
+
+        <div class="area">
+          <div class="subheading">The area</div>
+          <div class="subsection_content">Bankside, London SE1 9TG England</div>
+          <div class="subsection_content">
+            Blackfriars • 7 min walk
+            <br />
+            Southwark • 7 min walk
+          </div>
+          <div class="subsection_content">
+            Restaurants 1,000 <br />
+            Within 5 kms
+          </div>
+        </div>
+        <div class="quist">
+          <section class="grid-container">
+            <div class="grid-item">
+              <div class="frame">
+                <div class="frame_image">
+                  <img
+                    src="/images/shio-yang-RQYKAv-4F-U-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="frame_content">
+                  <div class="frame-title">High Timber</div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <div>0.3km • ££-£££ • Steakhouse • Grill</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="frame">
+                <div class="frame_image">
+                  <img
+                    src="/images/arno-senoner-ZLnXEZHhfkM-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="frame_content">
+                  <div class="frame-title">Tate Modern Observation</div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <div>24m • Observation Decks & Towers</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="frame">
+                <div class="frame_image">
+                  <img
+                    src="/images/chris-liverani-oCsaxvGCehM-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="frame_content">
+                  <div class="frame-title">Caravan</div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <div>0.3km • ££-£££ • Steakhouse • Grill</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- column2 -->
+            <div class="grid-item">
+              <div class="frame">
+                <div class="frame_image">
+                  <img
+                    src="/images/viktor-forgacs-Wlw3SteexaA-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="frame_content">
+                  <div class="frame-title">Southwark</div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <div>0.2km • ££-£££ • Neighbourhoods</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="frame">
+                <div class="frame_image">
+                  <img
+                    src="/images/carolina-marinelli-PkbyxvkGWcU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="frame_content">
+                  <div class="frame-title">OXBO Bankside</div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <div>0.9km • ££-£££ • Steakhouse • Grill</div>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="frame">
+                <div class="frame_image">
+                  <img
+                    src="/images/andrea-de-santis-Y0EAt6AAR5g-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="frame_content">
+                  <div class="frame-title">Bankside Gallery</div>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                  <div>0.1km • ££-£££ • Museuem</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <aside class="event-map">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.3061760274286!2d-0.10154508427680534!3d51.50759861850973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604a931761995%3A0x1ffc6f23e06b9be7!2sTate%20Modern!5e0!3m2!1sen!2suk!4v1647316538256!5m2!1sen!2suk"
+                width="400"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <!-- ------------------------------------------------reviews -->
+      <section class="reviews_container">
+        <div class="subheading">What 271 people are saying</div>
+        <div class="reviews_grid">
+          <div class="summary">
+            <div class="summary_image">
+              <img
+                src="/images/ratings bar.png"
+                alt=""
+                width="auto"
+                height="160"
+              />
+            </div>
+            <div class="summary_image">
+              <img
+                src="/images/Frame 47.png"
+                alt=""
+                width="auto"
+                height="600"
+              />
+            </div>
+          </div>
+          <div class="filters_and_reviews">
+            <section class="filters">
+              <div>
+                Overall ratings and reviews. <br />
+                Reviews can only be made by people who have been to this
+                location
+              </div>
+              <div class="filter_search_container">
+                <span class="fa-solid fa-magnifying-glass"></span>
+                <label for="search_reviews"></label>
+                <input
+                  class="filter_search"
+                  type="search"
+                  name=""
+                  id="search_reviews"
+                  placeholder="Search reviews..."
+                />
+              </div>
+              <div class="filter_container">
+                <div class="language">
+                  <button class="filter_button">
+                    <span>English</span>
+                    <span class="fa-solid fa-angle-down"></span>
+                  </button>
+                </div>
+                <div class="filter_selection">
+                  <button class="filter_button">Filter</button>
+                </div>
+                <div class="most_recent">
+                  <button class="filter_button">
+                    <span>Most recent</span>
+                    <span class="fa-solid fa-angle-down"></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="reviews">
+              <div class="review_card">
+                <div class="review_user">
+                  <div class="user_image1"></div>
+                  <div class="review_user_info">
+                    <div class="review_author">alan234</div>
+                    <div class="user_location">London,UK</div>
+                  </div>
+                </div>
+                <div class="review_ratings">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                  </div>
+                </div>
+
+                <div class="review_content">
+                  <p>
+                    Quirky art gallery, and it's free. I usually go there by
+                    myself for street photography at different times of the day
+                    and it's really nice to just walk around and take pictures.
+                    I went there with my wife and she really enjoyed it. There's
+                    lots of fun things there to see for free. They do switch up
+                    the sculptures and things every few months or so
+                  </p>
+                </div>
+                <div class="review_time">Written 12 February 2022</div>
+                <div class="review_disclaimer">
+                  This review is the subjective opinion of an Eventsite member
+                  and not of Eventsite LLC.
+                </div>
+              </div>
+              <div class="review_card">
+                <div class="review_user">
+                  <div class="user_image2"></div>
+                  <div class="review_user_info">
+                    <div class="review_author">stacy101</div>
+                    <div class="user_location">Birmingham,UK</div>
+                  </div>
+                </div>
+                <div class="review_ratings">
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+
+                <div class="review_content">
+                  <p>
+                    Lovely art gallery, and it's free. I usually go there by
+                    myself for street photography at different times of the day
+                    and it's really nice to just walk around and take pictures.
+                  </p>
+                </div>
+                <div class="review_time">Written 14 March 2022</div>
+                <div class="review_disclaimer">
+                  This review is the subjective opinion of an Eventsite member
+                  and not of Eventsite LLC.
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------------------------footer -->
+    </div>
+    <footer id="footer">
+      <div class="column_container">
+        <div class="column1">
+          <h3 class="column_title">Find Events</h3>
+          <ul>
+            <li><a href="">London Events</a></li>
+            <li><a href="">Manchester Events</a></li>
+            <li><a href="">Birmingham Events</a></li>
+            <li><a href="">Liverpool Events</a></li>
+            <li><a href="">Brighton Events</a></li>
+            <li><a href="">Bristol Events</a></li>
+            <li><a href="">Newcastle Events</a></li>
+            <li><a href="">All Events</a></li>
+          </ul>
+        </div>
+        <div class="column2">
+          <h3 class="column_title">Eventsite</h3>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href=""> Press</a></li>
+            <li><a href=""> Blog </a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="column3">
+          <h3 class="column_title">Connect with us</h3>
+          <ul>
+            <li><a href="">Contact Support</a></li>
+            <li>
+              <a href="">Twitter</a>
+            </li>
+            <li>
+              <a href="">Instagram</a>
+            </li>
+            <li>
+              <a href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column4">
+          <h3 class="column_title">Businesses</h3>
+          <div class="footer_button">
+            <a href="/services.html"
+              >Create an Event
+              <span class="fa-solid fa-chevron-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
